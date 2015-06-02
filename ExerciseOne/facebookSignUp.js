@@ -292,7 +292,9 @@ signUpNewMember();
 // Remember, our culture numbers items on a list starting at one, but numbers
 // a person's age starting at zero. That's why the hint names are out of
 // sync with the hint indexes. JS arrays are indexed like our birthdays.
-// Our "first birthday" is one full year after our "date of birth".
+// Our "first birthday" is one full year after our "date of birth", and we
+// are one year of age *beginning* at our first birthday and continuing
+// intil we *begin* being age two on our second birthday.
 function hintOne()   { return rot13(obfuscatedHints[0]); }
 function hintTwo()   { return rot13(obfuscatedHints[1]); }
 function hintThree() { return rot13(obfuscatedHints[2]); }
