@@ -130,7 +130,6 @@ function signUpNewMember(){
   // model object that still has a null value. We again ask the user to enter data
   // for such properties.
   function checkAllFields(){
-debugger;
       // Simulate a forgotten value by adding a new property with a null value.
       facebookUser['favoriteFood'] = null;
       /* iterate through the facebookUser object*/
