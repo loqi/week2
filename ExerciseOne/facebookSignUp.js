@@ -313,10 +313,13 @@ function hintSeven() { return rot13(obfuscatedHints[6]); }
 //
 // For extra credit, you could rewrite the hint code sprinkled throughout this file in any way
 // that makes sense to you and works correctly, but doesn't have similar code written more than
-// once. Remember, best practices have a heirarchy of value. The prime value: DIW "does it work?"
+// once. It's not WET because there are many calls to the same function sprinkled throughout
+// the script. There's no other way to call those functions where they need to be called. It's
+// DRY when there's very little duplication of code that could be going through a unified
+// interface of some sort. The hint functions are an obvious candidate for consolodation. But
+// remember, best practices have a heirarchy of value. The prime value: DIW "does it work?"
 // In software engineering, "Correct" code means code that does what it's supposed to do in all
 // circumstances. Correct trumps DRY every time. 'Tis better to be ugly than dead.
-
 
 // rot13 is a traditional Unix substitution cypher ("rotate all letter characters
 // forward 13 places in the alphabet"). It is its own decypher, since doing this a
